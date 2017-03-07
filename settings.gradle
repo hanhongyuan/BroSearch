@@ -1,0 +1,12 @@
+rootProject.name = 'bropen-search'
+
+// 内联插件定义
+include '00-bropen-grails', 'bropen-toolkit', 'bropen-ui-bootstrap', 'bropen-framework'
+
+String grailsVersion00 = "3.1.6.1"
+project(':00-bropen-grails').projectDir = new File(settingsDir, "../BroGrails_${grailsVersion00}")
+
+String version = "4.8.1"
+project(':bropen-toolkit').projectDir = new File(settingsDir, "../BroToolkit_${version}")
+project(':bropen-ui-bootstrap').projectDir = new File(settingsDir, "../BroUiBootstrap_${version}")
+project(':bropen-framework').projectDir = new File(settingsDir, "../BroFramework_${version}")
